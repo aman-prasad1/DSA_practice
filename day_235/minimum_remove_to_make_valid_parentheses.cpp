@@ -19,10 +19,10 @@ public:
             }
         }
         
-        string result = "";
+        string ans = "";
         for (char c : s) {
-            if (c != '*') result += c;
+            if (c != '*') ans += c;
         }
-        return result;
+        return ans;
     }
 };
