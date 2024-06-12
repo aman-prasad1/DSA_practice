@@ -41,9 +41,9 @@ public:
 class Solution {
     Node* solve(vector<vector<int>>& grid, int r, int c, int n){
         int same = true;
-        for(int i=r; i<n+r; i++){
-            for(int j=c; j<n+c; j++){
-                if(grid[r][c] != grid[i][j]){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                if(grid[r][c] != grid[i+r][j+c]){
                     same = false;
                     break;
                 }
