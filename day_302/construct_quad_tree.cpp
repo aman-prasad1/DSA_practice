@@ -2,9 +2,9 @@ class Solution {
 public:
     bool sameVal(vector<vector<int>>& grid, int x, int y, int size)
     {
-        for(auto i{x}; i<x+size; ++i)
+        for(auto i = x; i<x+size; ++i)
         {
-            for(auto j{y}; j<y+size; ++j)
+            for(auto j=y; j<y+size; ++j)
             {
                 if(grid[i][j] != grid[x][y])
                 {
@@ -22,7 +22,7 @@ public:
             root->isLeaf=true;
             return;
         }
-        const auto new_size{size/2};
+        int new_size = size/2;
         
         root->topLeft = new Node();
         rec(root->topLeft, grid, x, y, new_size);
@@ -38,7 +38,7 @@ public:
     }
     Node* construct(vector<vector<int>>& grid) 
     {
-        const auto n{grid.size()};
+        int n = grid.size();
         auto root = new Node();
         rec(root, grid, 0, 0, n);
         return root;
