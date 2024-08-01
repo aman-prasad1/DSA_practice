@@ -1,6 +1,6 @@
 /*
 INSTITUTION
-  ans = 1 for the the answer,
+  ans = 0 for the the answer,
   s = 0 for starting time of a clip
   e = 0 for ending time of a clip
   
