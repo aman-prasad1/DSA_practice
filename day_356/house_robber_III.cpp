@@ -1,3 +1,11 @@
+/*
+    using dfs method traverse to the leaf node. 
+    Calculate two ans 
+    first-> if we include that house and 
+    second-> if we exclude that house and
+    return a pair of {include,exclude}
+*/
+
 class Solution {
     pair<int,int> solve(TreeNode* root){
         if(!root) return {0,0};
